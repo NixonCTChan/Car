@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/redlongbutton"
+        android:title="Upgrade Suspension" />
+    <item android:title="Upgrade Exhaust" />
+    <item android:title="Upgrade Intake" />
+    <item android:title="Upgrade Forced Induction" />
+    <item android:title="Upgrace Brakes" />
+    <item android:title="Upgrade Wheels and Tires" />
+    <item android:title="Install Nitrous" />
+    <item android:title="Upgrade Car!" />
+</menu>
