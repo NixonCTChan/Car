@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
                     multiplier.setProgress((speed[0]));
                     try {
-                        sleep(40);
+                        sleep(50);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
