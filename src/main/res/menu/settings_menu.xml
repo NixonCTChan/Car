@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/music_seekbar"
+        android:title="Music" >
+        <menu>
+            <item
+                android:id="@+id/music0"
+
+                android:title="0%" />
+            <item
+                android:id="@+id/music25"
+
+                android:title="25%" />
+            <item
+                android:id="@+id/music50"
+
+                android:title="50%" />
+            <item
+                android:id="@+id/music100"
+
+                android:title="100%" />
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/soundeffects_seekbar"
+        android:title="Sound Effects" >
+        <menu>
+            <item
+                android:id="@+id/sound0"
+
+                android:title="0%" />
+            <item
+                android:id="@+id/sound25"
+
+                android:title="25%" />
+            <item
+                android:id="@+id/sound50"
+
+                android:title="50%" />
+            <item
+                android:id="@+id/sound100"
+
+                android:title="100%" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/pedal_switcher"
+        android:title="Pedal Switcher">
+        <menu>
+            <item
+                android:id="@+id/pedal_left"
+                android:onClick="setPedalLeft"
+                android:title="Left" />
+            <item
+                android:id="@+id/pedal_right"
+                android:onClick="setPedalRight"
+                android:title="Right" />
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -8,8 +8,10 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -150,11 +152,74 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void showShopPopup (View bottombutton){
         PopupMenu shopPopup = new PopupMenu(this,bottombutton);
         MenuInflater inflater = shopPopup.getMenuInflater();
         inflater.inflate(R.menu.shop_menu, shopPopup.getMenu());
         shopPopup.show();
+    }
+    public void showSettingsPopup (View topbutton){
+        PopupMenu shopPopup = new PopupMenu(this,topbutton);
+        MenuInflater inflater = shopPopup.getMenuInflater();
+        inflater.inflate(R.menu.settings_menu, shopPopup.getMenu());
+        shopPopup.show();
+    }
+    public void setPedalLeft (MenuItem item){
+        ImageButton settingsButton = findViewById(R.id.topbutton);
+        TextView settingsText = findViewById(R.id.toptext);
+
+        ImageButton missionsButton = findViewById(R.id.middlebutton);
+        TextView missionsText = findViewById(R.id.middletext);
+
+        ImageButton shopButton = findViewById(R.id.bottombutton);
+        TextView shopText = findViewById(R.id.bottomtext);
+
+        ImageButton gasPedal = findViewById(R.id.gaspedal);
+
+        ProgressBar multiplierProgress = findViewById(R.id.progressbar);
+        TextView multiplierText = findViewById(R.id.multipliertext);
+        TextView multiplierMarks = findViewById(R.id.multipliers);
+
+        settingsButton.setTranslationX(600);
+        settingsText.setTranslationX(600);
+        missionsButton.setTranslationX(600);
+        missionsText.setTranslationX(600);
+        shopButton.setTranslationX(600);
+        shopText.setTranslationX(600);
+        multiplierMarks.setTranslationX(550);
+        multiplierProgress.setTranslationX(550);
+        multiplierText.setTranslationX(550);
+        gasPedal.setTranslationX(-850);
+
+    }
+    public void setPedalRight (MenuItem item){
+        ImageButton settingsButton = findViewById(R.id.topbutton);
+        TextView settingsText = findViewById(R.id.toptext);
+
+        ImageButton missionsButton = findViewById(R.id.middlebutton);
+        TextView missionsText = findViewById(R.id.middletext);
+
+        ImageButton shopButton = findViewById(R.id.bottombutton);
+        TextView shopText = findViewById(R.id.bottomtext);
+
+        ImageButton gasPedal = findViewById(R.id.gaspedal);
+
+        ProgressBar multiplierProgress = findViewById(R.id.progressbar);
+        TextView multiplierText = findViewById(R.id.multipliertext);
+        TextView multiplierMarks = findViewById(R.id.multipliers);
+
+        settingsButton.setTranslationX(0);
+        settingsText.setTranslationX(0);
+        missionsButton.setTranslationX(0);
+        missionsText.setTranslationX(0);
+        shopButton.setTranslationX(0);
+        shopText.setTranslationX(0);
+        multiplierMarks.setTranslationX(0);
+        multiplierProgress.setTranslationX(0);
+        multiplierText.setTranslationX(0);
+        gasPedal.setTranslationX(0);
+
     }
 
 

@@ -59,10 +59,10 @@
         android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
         android:hapticFeedbackEnabled="true"
+        android:onClick="showSettingsPopup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/movingbackground"
-        app:srcCompat="@drawable/purplelongbutton"
-        />
+        app:srcCompat="@drawable/purplelongbutton" />
 
     <ImageButton
         android:id="@+id/middlebutton"
